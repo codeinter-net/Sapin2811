@@ -477,6 +477,57 @@ char* storm(byte mode)
   return 0;
 }
 
+char* rotation(byte mode)
+{
+  static CRGB color;
+  static int num;
+  static word sp;
+
+  switch(mode)
+  {
+    case MODE_INIT :
+      color=palette27[random(1, 26)];
+      num=0;
+      sp=50*32;
+      break;
+    case MODE_NAME :
+      return "Rotation";
+  }
+
+  for(byte i=NUM_LEDS-1; i>0; i--)
+    leds[i]=leds[i-1];
+
+  switch((num++)&7)
+  {
+    case 0:
+      leds[0]=color;
+      leds[0].fadeToBlackBy(75);
+      break;
+    case 1:
+      leds[0]=color;
+      break;
+    case 2:
+      leds[0]=color;
+      break;
+    case 3:
+      leds[0]=color;
+      leds[0].fadeToBlackBy(75);
+      break;
+    case 4:
+    case 5:
+    case 6:
+    case 7:
+      leds[0]=0;
+      break;
+  }
+
+  if(sp>0) sp--;
+
+  FastLED.show();
+  delay(sp>>5);
+  return 0;
+}
+
 void setup()
 {
   Serial.begin(115200);
@@ -506,7 +557,8 @@ char*(*function[])(byte) =
   pingPong,
   randomMono,
   fullSpeedo,
-  plusOne
+  plusOne,
+  rotation
 };
 
 byte numFunctions=sizeof(function)/sizeof(*function);
@@ -592,4 +644,3 @@ static byte button1,button2;
   button2=digitalRead(BUTTON2);
 
 }
-

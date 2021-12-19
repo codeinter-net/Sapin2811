@@ -1,7 +1,11 @@
 # Sapin2811
-Programmation de LED WS2811 avec un Arduino Nano pour décorer un sapin de Noël.
+***Programmation de LED WS2811 avec un Arduino Nano pour décorer un sapin de Noël***
 
-Je ne suis pas le premier à le faire (et je ne serai pas le dernier), mais voici ma modeste contribution aux projets de pilotage de LED de type WS2811/WS2812. C'est un Arduino Nano qui a été utilisé en raison de sa compacité. Afin d'aller plus loin, j'y ai ajouté un écran OLED qui permet de connaître le nom du programme en cours, et le compte à rebours du mode automatique. J'ai donc aussi ajouté deux boutons qui permettent de choisir le programme.
+Je ne suis pas le premier à le faire (et je ne serai pas le dernier), mais voici ma modeste contribution aux projets de pilotage de LED de type WS2811/WS2812. 
+
+Voici le résultat en vidéo : https://www.youtube.com/watch?v=bjwkJZv6Uj4
+
+C'est un Arduino Nano qui a été utilisé en raison de sa compacité. Afin d'aller plus loin, j'y ai ajouté un écran OLED qui permet de connaître le nom du programme en cours, et le compte à rebours du mode automatique. J'ai donc aussi ajouté deux boutons qui permettent de choisir le programme.
 
 ![Le circuit dans le sapin](https://github.com/codeinter-net/Sapin2811/blob/main/IMG_20211219_224144.jpg)
 

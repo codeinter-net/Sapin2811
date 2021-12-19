@@ -44,7 +44,7 @@ ATTENTION !  Toute la partie reliée au 230 V doit être câblée avec soin au 
 
 On peut choisir un autre modèle d'alimentation du moment que celle-ci fournit 5V régulés, et une puissance de 15W par ruban de LED installé (3 rubans = 45W).
 
-Il y a 13 modes de clignotement, plus un mode automatique (actif au démarrage) qui change de mode toutes les 30 secondes. Les intitulés sont en anglais car c'est plus pratique pour décrire l'animation en 8 caractères seulement.
+Il y a 14 modes de clignotement, plus un mode automatique (actif au démarrage) qui change de mode toutes les 30 secondes. Les intitulés sont en anglais car c'est plus pratique pour décrire l'animation en 8 caractères seulement.
 - Rainbows
 - Flashing
 - Top&Down
@@ -58,6 +58,7 @@ Il y a 13 modes de clignotement, plus un mode automatique (actif au démarrage) 
 - AllRandz
 - MaxSpeed
 - One&More
+- Rotation
 
 Il y a aussi un mode caché, qui est resté à l'état de prototype, et peut être activé en l'ajoutant à la liste.
 
